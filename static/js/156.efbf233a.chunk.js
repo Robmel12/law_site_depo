@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunklaw_site=self.webpackChunklaw_site||[]).push([[156],{6156:function(e,a,n){n.r(a);n(2791);var s=n(184);a.default=function(e){return(0,s.jsx)("h1",{className:"marketing",children:"Marketing"})}}}]);
+//# sourceMappingURL=156.efbf233a.chunk.js.map
