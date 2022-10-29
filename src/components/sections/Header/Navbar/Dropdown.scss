@@ -1,0 +1,30 @@
+.dropdown-menu {
+  background: rgba(0, 0, 0, 0.3);
+  width: 145px;
+  position: absolute;
+  top: 50px;
+  list-style: none;
+  text-align: start;
+}
+.dropdown-menu li {
+  transition: 0.2s ease-in-out;
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  transition: 0.2s ease-in-out;
+  font-size: 1.5rem;
+}
+
+.dropdown-menu.clicked {
+  display: none;
+}
+.dropdown-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  padding: 16px;
+}

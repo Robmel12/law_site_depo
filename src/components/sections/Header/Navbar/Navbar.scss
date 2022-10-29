@@ -1,0 +1,175 @@
+@use "../../../../css/mixin.scss" as mixin;
+@import "./Dropdown.scss";
+@import "./Hours.scss";
+
+//main nav styles
+
+.navbar-container {
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  transition: 1s ease-in-out;
+  //sidebar styles
+  &.sidebar {
+    transition: 1s ease-in-out;
+    position: fixed;
+
+    .hours {
+      display: none;
+    }
+
+    .navbar {
+      background: transparent;
+      .menu-icon {
+        display: block;
+      }
+
+      .nav-menu {
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        right: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        margin-right: 0;
+        @include mixin.tablet {
+          width: 50%;
+        }
+        @include mixin.desktop {
+          width: 40%;
+        }
+
+        .nav-links {
+          text-align: center;
+          padding: 2rem;
+          width: 100%;
+          display: table;
+          color: var(--font-color-light);
+          &:hover {
+            background-color: grey;
+            color: var(--font-color-dark);
+            border-radius: 0;
+          }
+        }
+        &.active {
+          background: #242222;
+          right: 0;
+          top: 0;
+          opacity: 1;
+          transition: all 0.5s ease;
+          .nav-item {
+            width: 100%;
+          }
+        }
+
+        .hours {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .menu-icon {
+    z-index: 99;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    @include mixin.desktop {
+      display: none;
+    }
+
+    .fa-times {
+      transition: 0.2s ease-in-out;
+      z-index: 100;
+      color: #fff;
+      font-size: 2rem;
+      svg {
+        color: white;
+      }
+    }
+  }
+  .nav-logo {
+    transition: 0.3s ease-in-out;
+    &.logo-shrink {
+      height: 50px;
+      width: 75px;
+      transition: 0.3s ease-in-out;
+    }
+    justify-self: start;
+    height: 100px;
+    width: 150px;
+    @include mixin.xSmall {
+      height: 60px;
+      width: 100px;
+    }
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+
+  .navbar {
+    @include mixin.desktop {
+      width: 50%;
+      float: right;
+      background: linear-gradient(
+        90deg,
+        rgb(255, 255, 255, 0) 0%,
+        rgb(var(--accent-bright)) 100%
+      );
+      height: 50px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      font-size: 1rem;
+      width: 84%;
+    }
+    .nav-menu {
+      display: none;
+      color: inherit;
+      list-style: none;
+      .nav-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: inherit;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+      }
+      @include mixin.desktop {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        grid-gap: 10px;
+        text-align: center;
+        width: 50%;
+        justify-content: flex-end;
+        margin-right: 20px;
+
+        .nav-item {
+          color: inherit;
+          display: flex;
+          align-items: center;
+          height: 50px;
+        }
+      }
+    }
+
+    &.dark {
+      color: black;
+
+      .hamburgerMenu .mobile-icon svg {
+        color: black;
+      }
+    }
+    &.white {
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@use "../../../css/mixin.scss" as mixin;
+.container {
+  left: 0;
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  top: 40%;
+  color: var(--font-color-light);
+  @include mixin.tablet {
+  }
+  @include mixin.desktop {
+    left: 10%;
+    top: 30%;
+    right: unset;
+    margin: unset;
+  }
+}

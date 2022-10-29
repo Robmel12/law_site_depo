@@ -1,0 +1,26 @@
+@use "../../../css/mixin.scss" as mixin;
+.container {
+  flex: 2;
+  margin-right: 30px;
+  @include mixin.desktop {
+    display: flex;
+  }
+  flex-direction: column;
+  display: none;
+  align-self: unset;
+  width: 300px;
+  height: 400px;
+  justify-content: center;
+}
+.textarea {
+  background-color: grey;
+  color: var(--font-color-light);
+}
+.input {
+  background-color: grey;
+  color: var(--font-color-light);
+}
+
+.button {
+  color: black;
+}

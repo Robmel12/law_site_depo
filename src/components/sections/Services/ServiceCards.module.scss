@@ -1,0 +1,16 @@
+@use "../../../css/mixin.scss" as mixin;
+
+.backgroundImage {
+  z-index: 0;
+  position: absolute;
+  @include mixin.tablet {
+    height: 1000px;
+  }
+  @include mixin.desktop {
+    height: 900px;
+  }
+  height: 1000px;
+  width: 100%;
+  opacity: 0.3;
+  background-size: cover;
+}

@@ -1,0 +1,22 @@
+@use "../../../css/mixin.scss" as mixin;
+
+.attorneys {
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.backgroundImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  @include mixin.tablet {
+    background-size: cover;
+  }
+  opacity: 0.3;
+  z-index: -1;
+}

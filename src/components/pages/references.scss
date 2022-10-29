@@ -1,0 +1,12 @@
+.references {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 100%;
+  background-color: white;
+  color: black;
+  :visited {
+    color: black;
+  }
+}

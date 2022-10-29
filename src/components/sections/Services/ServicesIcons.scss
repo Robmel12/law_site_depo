@@ -1,0 +1,80 @@
+@use "../../../css/mixin.scss" as mixin;
+.service-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  @include mixin.tablet {
+    min-height: 0;
+  }
+  min-height: 1500px;
+}
+.services-icons-heading {
+  margin-top: 20px;
+  font-size: 2rem;
+  p {
+    font-size: 1rem;
+  }
+}
+
+@include mixin.tablet {
+  .service-icon {
+    width: 200px;
+    height: 275px;
+    p {
+      font-size: 1.2rem;
+    }
+    svg {
+      font-size: 3rem;
+      transform: translateX(82px) translateY(140px);
+    }
+  }
+  .service-icon-image {
+    height: 200px;
+    width: 200px;
+  }
+  .icons-container {
+    max-width: 1156px;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(4, 275px);
+  }
+}
+
+.icons-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  @include mixin.tablet {
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  height: 100%;
+  gap: 40px;
+
+  .service-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    svg {
+      font-size: 2rem;
+      position: absolute;
+      color: aqua;
+      transform: translate(5px, 20px);
+    }
+    &-image {
+      height: 100px;
+      width: 100px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 50%;
+    }
+  }
+}

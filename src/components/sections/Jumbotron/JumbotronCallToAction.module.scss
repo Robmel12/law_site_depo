@@ -1,0 +1,27 @@
+@use "../../../css/mixin.scss" as mixin;
+.container.div {
+  position: absolute;
+  top: 65%;
+  @media only screen and (max-height: 390px) {
+    top: 250px;
+  }
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  @include mixin.tablet {
+    top: 75%;
+    @media only screen and (max-height: 390px) {
+      top: 250px;
+    }
+  }
+  @include mixin.desktop {
+    margin: none;
+    right: unset;
+    left: 12%;
+    top: 62%;
+    @media only screen and (max-height: 500px) {
+      top: 350px;
+    }
+  }
+}

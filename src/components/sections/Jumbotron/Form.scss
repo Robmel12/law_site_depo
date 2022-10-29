@@ -1,0 +1,103 @@
+@use "../../../css/mixin.scss" as mixin;
+
+.email-form-container {
+  color: inherit;
+  z-index: 0;
+  position: relative;
+  width: 70%;
+  @include mixin.tablet{
+    width: 40%;
+  }
+  @include mixin.desktop{
+    width: 30%;
+  }
+  
+  h3 {
+    @include mixin.desktop {
+      font-size: 2rem;
+    }
+    margin-bottom: 20px;
+
+    .form-icon {
+      font-size: 2rem;
+      @include mixin.desktop {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  .fa-times.form-icon {
+    cursor: pointer;
+    background-color: inherit;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    position: absolute;
+    color: rgba(var(--accent-bright), 0.9);
+    right: 0px;
+    top: 0;
+  }
+
+  .email-form {
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    border: none;
+    input {
+      height: 30px;
+      width: 100%;
+      border-radius: 5px;
+      color: black;
+      font-size: 1.1rem;
+      border: none;
+      border-left: solid 10px transparent;
+      &::placeholder {
+        color: black;
+        opacity: 1;
+      }
+    }
+
+    textarea {
+      height: 200px;
+      color: black;
+      font-size: 1.1rem;
+      display: block;
+      resize: none;
+      border: solid 10px transparent;
+      outline: none;
+      border-radius: 5px;
+
+      @include mixin.desktop {
+        height: 250px;
+        width: 100%;
+      }
+      &::placeholder {
+        color: black;
+        opacity: 1;
+      }
+    }
+
+    .form-btn {
+      background-color: rgba(var(--accent-bright), 0.9);
+      font-size: 1.3rem;
+      color: inherit;
+      text-align: center;
+      align-self: center;
+      width: 140px;
+      height: 40px;
+      border: none;
+      transition: 0.3s ease-in-out;
+      border-radius: 5px;
+      &:hover {
+        cursor: pointer;
+        align-self: center;
+        width: 145px;
+      }
+    }
+  }
+  &.hidden {
+    display: none;
+  }
+}

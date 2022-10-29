@@ -1,0 +1,20 @@
+@use '../../../../css/mixin.scss' as mixin;
+.hours{
+  display: none;
+}
+@include mixin.desktop{
+.hours{
+  color: inherit;
+  width: 170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-right: 20px;
+  & .schedule{
+    color: inherit;
+    font-size: 1rem;
+  }
+}
+}

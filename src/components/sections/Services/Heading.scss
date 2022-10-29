@@ -1,0 +1,22 @@
+@use '../../../css/mixin.scss' as mixin;
+.services-icons-heading-container{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  &.normal{
+    margin-top: 100px;
+  }
+    
+    
+   
+    span{
+      font-family: halant;
+      color: rgba(var(--alt-accent));
+      font-weight: bold;
+    }
+  }
+
+

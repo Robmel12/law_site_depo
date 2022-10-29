@@ -1,0 +1,77 @@
+@use "../../../css/mixin.scss" as mixin;
+.BigFooter {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  color: black;
+  background-color: white;
+  .footer-logo {
+    height: 100px;
+    width: 150px;
+  }
+  .address-container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    .address {
+      width: 90%;
+    }
+  }
+
+  .footer-logo-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+  }
+}
+
+.social-media-links {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 1.5rem;
+
+  &:visited {
+    color: black;
+  }
+}
+
+.vr {
+  width: 1px;
+  height: 70%;
+  background-color: black;
+}
+.footer-nav-links {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: bold;
+  .nav-item {
+    color: black;
+    margin-left: 20px;
+    height: 50px;
+    .nav-links{
+      width: 100%;
+      border: 1px solid white;
+      padding: 5px;
+      border-radius: 5px;
+    }
+    .nav-links:visited {
+      color: black;
+    }
+    .nav-links:hover {
+      border: 1px solid;
+    }
+    svg:hover {
+      border: none;
+    }
+  }
+}

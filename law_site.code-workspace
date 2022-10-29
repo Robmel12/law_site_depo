@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		}
+	],
+	"settings": {
+	
+	},
+	"devDependencies": {
+		"@typescript-eslint/parser": "^5.0.1",
+		"eslint": "^8.7.0",
+		"prettier": "2.7.1",
+		"typescript": "^4.9.0-dev.20220831"
+	  }
+	
+}

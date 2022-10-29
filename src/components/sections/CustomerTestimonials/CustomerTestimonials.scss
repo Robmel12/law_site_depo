@@ -1,0 +1,138 @@
+@use "../../../css/mixin.scss" as mixin;
+.customer-testimonials-heading {
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  color: black;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  h2 {
+    font-family: halant;
+    font-weight: 400;
+    @include mixin.xSmall {
+      font-size: 1rem;
+    }
+    font-size: 1.3rem;
+  }
+}
+
+.customer-testimonials {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(var(--accent-bright));
+  height: 600px;
+  @include mixin.desktop {
+    height: 300px;
+  }
+  max-height: 500px;
+  width: 100%;
+  color: white;
+  .hr {
+    position: relative;
+    justify-self: center;
+    align-self: center;
+    height: 5px;
+    width: 40%;
+    border-bottom: 1px solid white;
+    margin-bottom: 100px;
+    @include mixin.desktop {
+      margin-bottom: 130px;
+    }
+  }
+}
+
+.testimonial {
+  width: 90%;
+
+  display: flex;
+  flex-direction: column;
+  @include mixin.desktop {
+    flex-direction: row;
+    width: 70%;
+  }
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  @include mixin.desktop {
+    gap: 0;
+  }
+  .hr {
+    display: none;
+  }
+}
+.quotes {
+  font-family: halant;
+  font-size: 1.5rem;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.testimony {
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-family: halant;
+  color: black;
+  width: 80%;
+  @include mixin.desktop {
+    width: unset;
+  }
+}
+.customer {
+  font-family: halant;
+  color: black;
+  position: absolute;
+  transform: translateX(100px) translateY(130px);
+  @include mixin.xSmall {
+    transform: translateX(50px) translateY(150px);
+  }
+  @include mixin.tablet {
+    transform: translateX(100px) translateY(100px);
+  }
+  @include mixin.desktop {
+    transform: translateX(300px) translateY(60px);
+  }
+}
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+  align-self: center;
+  justify-self: center;
+  gap: 20px;
+}
+.compliment {
+  text-align: center;
+  font-size: 1.5rem;
+  width: 80%;
+  @include mixin.desktop {
+    width: 300px;
+  }
+}
+.thumbs {
+  display: inline-block;
+  font-size: 1.5rem;
+}
+.testimonial-heading-icon {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  font-size: 2rem;
+}
+.stars {
+  width: unset;
+}
+.stars {
+  width: unset;
+  @include mixin.desktop {
+    width: 200px;
+    margin-left: 10px;
+  }
+}

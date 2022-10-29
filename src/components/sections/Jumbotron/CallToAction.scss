@@ -1,0 +1,82 @@
+@use "../../../css/mixin.scss" as mixin;
+//call to action
+.call-to-action__container {
+  display: flex;
+  position: relative;
+  color: inherit;
+  height: 200px;
+  font-size: 1.3rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  @include mixin.xSmall {
+    font-size: 1.1rem;
+  }
+  @include mixin.tablet {
+    font-size: 1.5rem;
+    width: 100%;
+    flex-direction: row;
+  }
+  @include mixin.desktop {
+    width: 300px;
+    height: 130px;
+    gap: 0;
+    flex-wrap: wrap;
+  }
+
+  &--icon {
+    display: inline;
+
+    font-size: 2rem;
+    @include mixin.tablet {
+      font-size: 2.5rem;
+    }
+
+    @include mixin.desktop {
+      margin-right: 20px;
+    }
+  }
+  &--button {
+    position: relative;
+    vertical-align: center;
+    color: inherit;
+    font-size: 1.2rem;
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(var(--alt-accent));
+    transition: 0.2s ease-in-out;
+    @include mixin.tablet {
+      font-size: 1.5rem;
+      height: 55px;
+      width: 250px;
+    }
+    @include mixin.desktop {
+      font-size: 1.5rem;
+    }
+
+    &:hover {
+      cursor: pointer;
+      @include mixin.tablet {
+        height: 65px;
+        width: 260px;
+      }
+      height: 60px;
+      width: 210px;
+      transition: 0.2s ease-in-out;
+    }
+  }
+}
+.button__container {
+  width: 210px;
+  height: 60px;
+  @include mixin.tablet {
+    width: 260px;
+  }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

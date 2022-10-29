@@ -1,0 +1,114 @@
+@use "../../../css/mixin.scss" as mixin;
+
+.service-cards {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  z-index: 0;
+  background-color: black;
+  justify-items: center;
+  color: white;
+  margin-bottom: 30px;
+  @include mixin.xSmall {
+    height: 47%;
+  }
+
+  align-items: center;
+
+  @include mixin.desktop {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &-heading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+
+    @include mixin.desktop {
+      .hr {
+        z-index: 1;
+        width: 80%;
+        height: 2px;
+        border-bottom: 1px solid rgb(var(--accent-bright));
+        margin: 10px 0;
+      }
+    }
+    svg {
+      z-index: 1;
+      color: rgb(var(--accent-bright));
+      font-size: 2rem;
+    }
+    .service-cards-heading {
+      z-index: 1;
+      margin-bottom: 30px;
+      h2 {
+        text-align: center;
+        font-family: halant;
+        font-weight: 400;
+      }
+      &-icon {
+        z-index: 1;
+        margin-top: 30px;
+      }
+    }
+  }
+  .service-card {
+    justify-self: center;
+    align-self: center;
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    @include mixin.tablet {
+      width: 70%;
+    }
+    @include mixin.desktop {
+      width: 50%;
+    }
+    gap: 20px;
+
+    svg {
+      z-index: 1;
+      font-size: 2rem;
+    }
+    &-title {
+      align-self: center;
+      text-align: center;
+      width: 70%;
+      z-index: 1;
+      font-size: 1.5rem;
+      font-weight: 400;
+      padding-bottom: 5px;
+      border-bottom: 1px solid rgb(var(--accent-bright));
+    }
+    &-text {
+      flex: 2;
+      font-size: 1rem;
+      margin-top: 10px;
+      font-family: halant;
+      &-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px;
+      }
+    }
+    &-icon {
+      display: flex;
+      align-self: center;
+      justify-self: flex-end;
+      justify-content: flex-end;
+      z-index: 1;
+      height: 100%;
+      flex: 1;
+      margin-left: 20px;
+    }
+  }
+}

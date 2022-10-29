@@ -1,0 +1,12 @@
+.services-spacer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(var(--accent-bright));
+  height: 190px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 2;
+}

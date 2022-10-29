@@ -1,0 +1,12 @@
+@use "../../../css/mixin.scss" as mixin;
+@import "./Heading.scss";
+@import "./ServiceCards.scss";
+@import "./ServicesIcons.scss";
+@import "./Spacer.scss";
+.services {
+  background-color: white;
+  box-sizing: border-box;
+  @include mixin.xSmall {
+    height: 460vh;
+  }
+}

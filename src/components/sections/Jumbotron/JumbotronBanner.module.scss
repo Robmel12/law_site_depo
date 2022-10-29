@@ -1,0 +1,66 @@
+@use "../../../css/mixin.scss" as mixin;
+@for $i from 1 through 3 {
+  .item:nth-child(#{$i}).show {
+    font-size: $i * 1rem;
+    @include mixin.tablet {
+      font-size: $i * 1.7rem;
+      @media only screen and (max-height: 615px) {
+        font-size: $i * 1.3rem;
+      }
+    }
+    @include mixin.desktop {
+      font-size: $i * 1.5rem;
+    }
+
+    transition-delay: calc(($i - 1) * 1.5s);
+  }
+}
+
+.banner {
+  color: var(--font-color-light);
+  transform: rotate(-5deg);
+  font-weight: 300;
+  @media only screen and (max-height: 390px) {
+    top: 150px;
+  }
+  @include mixin.xSmall {
+    left: 15%;
+  }
+  @include mixin.tablet {
+    top: 15%;
+    left: 12%;
+    opacity: 0.9;
+    @media only screen and (max-height: 390px) {
+      top: 150px;
+    }
+  }
+  @include mixin.desktop {
+    top: 30%;
+  }
+  left: 22%;
+  top: 40%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .list {
+    font-size: 2rem;
+  }
+
+  .item {
+    &.hide {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    &.show {
+      opacity: 1;
+      transform: translateX(0px);
+      transition-property: opacity, transform;
+      transition-timing-function: ease-in-out;
+      transition-duration: 1.5s;
+    }
+  }
+}
