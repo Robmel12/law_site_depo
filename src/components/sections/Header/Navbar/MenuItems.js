@@ -1,12 +1,12 @@
 export const MenuItems = [
   {
     title: "References",
-    path: "/references",
+    path: "/law_site_depo/references",
     className: "dropdown-link",
   },
   {
     title: "Consulting",
-    path: "/consulting",
+    path: "/law_site_depo/consulting",
     className: "dropdown-link",
   },
 ];

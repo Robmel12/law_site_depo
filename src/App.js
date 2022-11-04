@@ -60,7 +60,7 @@ function App() {
           />
 
           <Route
-            path="/our-attorneys"
+            path="/law_site_depo/our-attorneys"
             exact
             element={
               <OurAttorneys
@@ -72,7 +72,7 @@ function App() {
           />
 
           <Route
-            path="/practice-areas"
+            path="/law_site_depo/practice-areas"
             exact
             element={
               <PracticeAreas
@@ -84,7 +84,7 @@ function App() {
           />
 
           <Route
-            path="/consulting"
+            path="/law_site_depo/consulting"
             exact
             element={
               <Consulting
@@ -95,7 +95,7 @@ function App() {
             }
           />
           <Route
-            path="/references"
+            path="/law_site_depo/references"
             exact
             element={
               <References
@@ -107,7 +107,7 @@ function App() {
           />
 
           <Route
-            path="/marketing"
+            path="/law_site_depo/marketing"
             exact
             element={
               <Marketing

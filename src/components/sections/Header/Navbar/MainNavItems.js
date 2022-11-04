@@ -10,14 +10,14 @@ export const MainNavItems = [
   },
   {
     title: "Our Attorneys",
-    path: "/our-attorneys",
+    path: "/law_site_depo/our-attorneys",
     LinkClassName: "nav-links",
     ListItemClassName: "nav-item",
     onClick: true,
   },
   {
     title: "Practice Areas",
-    path: "/practice-areas",
+    path: "/law_site_depo/practice-areas",
     LinkClassName: "nav-links",
     ListItemClassName: "nav-item",
     onClick: true,
