@@ -54,7 +54,7 @@ export default function Navbar(props) {
           shrinkLogo || click ? "navbar-container sidebar" : "navbar-container"
         }
       >
-        <Link to="/">
+        <Link to="/law_site_depo">
           <Suspense fallback={<></>}>
             <Logo
               src={
