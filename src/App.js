@@ -48,7 +48,7 @@ function App() {
 
         <Routes>
           <Route
-            path="/"
+            path="/law_site_depo"
             index
             element={
               <Home
