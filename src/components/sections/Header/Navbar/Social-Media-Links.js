@@ -21,6 +21,6 @@ export const SocialMediaLinks = [
     icon: <GrLinkedinOption />,
     LinkClassName: "social-media-links",
     ListItemClassName: "social-media-item",
-    url: "https://www.linkedin.comç/",
+    url: "https://www.linkedin.com/",
   },
 ];
