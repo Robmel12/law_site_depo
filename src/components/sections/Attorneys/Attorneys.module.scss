@@ -8,6 +8,22 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+  .socialMediaLinks {
+    display: flex;
+    position: absolute;
+    @include mixin.desktop {
+      flex-direction: row;
+      top: -50px;
+      left: 30px;
+    }
+    flex-direction: column;
+    top: -120px;
+    left: 10px;
+    gap: 5px;
+    svg {
+      color: white;
+    }
+  }
 }
 .backgroundImage {
   position: absolute;

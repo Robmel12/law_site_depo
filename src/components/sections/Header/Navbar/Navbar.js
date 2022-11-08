@@ -5,13 +5,11 @@ import { Link } from "react-router-dom";
 import LogoImageBlack from "../../../../images/logo-image.webp";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
-import { RiArrowDropDownLine } from "react-icons/ri";
 import Dropdown from "./Dropdown";
 import { MainNavItems } from "./MainNavItems";
 import Links from "./Links";
 import Hours from "./Hours";
 import Logo from "./Logo";
-import ScrollToTop from "../../../pages/Pagefunctions/ScrollToTop";
 
 export default function Navbar(props) {
   const { useDarkLogo, useWhiteLogo, useWhiteLinks, shrinkLogo } = props;

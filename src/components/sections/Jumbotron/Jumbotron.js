@@ -1,12 +1,4 @@
-import React, {
-  lazy,
-  Suspense,
-  useEffect,
-  forwardRef,
-  useState,
-  useRef,
-  useCallback,
-} from "react";
+import React, { lazy, Suspense, forwardRef, useState } from "react";
 import { FaHeadset } from "react-icons/fa";
 import LawyersWalking from "../../../images/lawyers-walking.webp";
 import CallToAction from "./CallToAction";
@@ -16,7 +8,7 @@ import JumbotronStyles from "./Jumbotron.module.scss";
 import CallToActionStyles from "./JumbotronCallToAction.module.scss";
 import BannerStyles from "./JumbotronBanner.module.scss";
 import FormStyles from "./JumbotronForm.module.scss";
-import { GiConsoleController, GiLabCoat } from "react-icons/gi";
+
 // import BackgroundImage from './BackgroundImage';
 const BackgroundImage = lazy(() => import("./BackgroundImage"));
 

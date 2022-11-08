@@ -12,7 +12,7 @@ export default function BigFooter(Props) {
   return (
     <footer className="BigFooter">
       <div className="footer-logo-container">
-        <Link to="/">
+        <Link to="/law_site_depo/">
           <Suspense fallback={<></>}>
             <Logo
               src={LogoImageBlack}

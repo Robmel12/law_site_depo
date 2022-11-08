@@ -1,4 +1,4 @@
-import React, { useState, lazy, Suspense, useEffect } from "react";
+import React, { useState, lazy, Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // import Home from './components/pages/Home';

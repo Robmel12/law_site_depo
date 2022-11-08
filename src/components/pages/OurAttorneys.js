@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { Attorneys } from "../sections/Attorneys/Attorneys";
 import useColorNav from "./Pagefunctions/useColorNav";
-import LogoImageWhite from "../../images/logo-image-white.webp";
 
 function OurAttorneys(props) {
   const { setUseDarkLogo, setUseWhiteLinks, setUseWhiteLogo } = props;

@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import useColorNav from "./Pagefunctions/useColorNav";
 // const Services = lazy(() => import("../sections/Services/Services"));
 import { Services } from "../sections/Services/Services";
