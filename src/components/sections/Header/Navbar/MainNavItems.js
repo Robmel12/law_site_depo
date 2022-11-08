@@ -29,7 +29,7 @@ export const MainNavItems = [
     ListItemClassName: "nav-item",
     onMouseLeave: true,
     onMouseEnter: true,
-    onClick: false,
+    onClick: true,
     DropDown: true,
     path: "#",
   },

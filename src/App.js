@@ -1,4 +1,4 @@
-import React, { useState, lazy, Suspense } from "react";
+import React, { useState, lazy, Suspense, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // import Home from './components/pages/Home';
@@ -9,9 +9,6 @@ import "./css/globals.scss";
 import ScrollToTop from "./components/pages/Pagefunctions/ScrollToTop";
 import useScrollPosition from "./components/pages/Pagefunctions/useScrollPosition";
 import References from "./components/pages/References";
-
-const Marketing = lazy(() => import("./components/pages/Marketing"));
-const Consulting = lazy(() => import("./components/pages/Consulting"));
 
 const OurAttorneys = lazy(() => import("./components/pages/OurAttorneys"));
 const PracticeAreas = lazy(() => import("./components/pages/PracticeAreas"));
@@ -84,33 +81,10 @@ function App() {
           />
 
           <Route
-            path="/law_site_depo/consulting"
-            exact
-            element={
-              <Consulting
-                setUseDarkLogo={setUseDarkLogo}
-                setUseWhiteLinks={setUseWhiteLinks}
-                setUseWhiteLogo={setUseWhiteLogo}
-              />
-            }
-          />
-          <Route
             path="/law_site_depo/references"
             exact
             element={
               <References
-                setUseDarkLogo={setUseDarkLogo}
-                setUseWhiteLinks={setUseWhiteLinks}
-                setUseWhiteLogo={setUseWhiteLogo}
-              />
-            }
-          />
-
-          <Route
-            path="/law_site_depo/marketing"
-            exact
-            element={
-              <Marketing
                 setUseDarkLogo={setUseDarkLogo}
                 setUseWhiteLinks={setUseWhiteLinks}
                 setUseWhiteLogo={setUseWhiteLogo}

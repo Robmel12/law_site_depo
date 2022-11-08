@@ -13,7 +13,21 @@ function References(props) {
 
   return (
     <>
-      <Links List={ReferencesList} className="references" />
+      <section className="references">
+        <h2 className="references-title">
+          We Use These APIs To
+          <span className="accent"> Make Your Life Easier</span>
+        </h2>
+        <Links List={ReferencesList} className="references__links" />
+        <script
+          async
+          src="https://cse.google.com/cse.js?cx=43689168b59d843ff"
+        ></script>
+        <div
+          class="gcse-searchbox-only"
+          style={{ width: "100px", height: "100px" }}
+        ></div>
+      </section>
     </>
   );
 }

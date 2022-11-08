@@ -11,7 +11,7 @@ import { MainNavItems } from "./MainNavItems";
 import Links from "./Links";
 import Hours from "./Hours";
 import Logo from "./Logo";
-// const Logo = lazy(()=> import('./Logo'))
+import ScrollToTop from "../../../pages/Pagefunctions/ScrollToTop";
 
 export default function Navbar(props) {
   const { useDarkLogo, useWhiteLogo, useWhiteLinks, shrinkLogo } = props;
@@ -43,8 +43,16 @@ export default function Navbar(props) {
         .display === "none"
     ) {
       menuIconDisplay.current = false;
+      MainNavItems[3].path = "#";
+      // MainNavItems.map((item) => {
+      //   item.onClick = true;
+      // });
     } else {
       menuIconDisplay.current = true;
+      MainNavItems[3].path = "law_site_depo/references";
+      // MainNavItems.map((item) => {
+      //   item.onClick = false;
+      // });
     }
   });
   return (

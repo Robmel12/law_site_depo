@@ -27,7 +27,9 @@ function LinkItem(props) {
           {item.icon}
         </a>
       )}
-
+      <p className={item.TextClassName && item.TextClassName}>
+        {item.text && item.text}
+      </p>
       {props.DropDown}
     </li>
   );
