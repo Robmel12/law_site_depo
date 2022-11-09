@@ -32,7 +32,7 @@ function App() {
   );
 
   return (
-    <Router>
+    <Router hashType="slash">
       <ScrollToTop />
       <Suspense fallback={<div>..loading</div>}>
         <Navbar
@@ -45,7 +45,7 @@ function App() {
 
         <Routes>
           <Route
-            path="/law_site_depo"
+            path="/"
             index
             element={
               <Home
@@ -57,7 +57,7 @@ function App() {
           />
 
           <Route
-            path="/law_site_depo/our-attorneys"
+            path="/our-attorneys"
             exact
             element={
               <OurAttorneys
@@ -69,7 +69,7 @@ function App() {
           />
 
           <Route
-            path="/law_site_depo/practice-areas"
+            path="/practice-areas"
             exact
             element={
               <PracticeAreas
@@ -81,7 +81,7 @@ function App() {
           />
 
           <Route
-            path="/law_site_depo/references"
+            path="/references"
             exact
             element={
               <References

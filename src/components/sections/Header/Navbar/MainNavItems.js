@@ -3,21 +3,21 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 export const MainNavItems = [
   {
     title: "Home",
-    path: "/law_site_depo",
+    path: "/",
     LinkClassName: "nav-links",
     ListItemClassName: "nav-item",
     onClick: true,
   },
   {
     title: "Our Attorneys",
-    path: "/law_site_depo/our-attorneys",
+    path: "/our-attorneys",
     LinkClassName: "nav-links",
     ListItemClassName: "nav-item",
     onClick: true,
   },
   {
     title: "Practice Areas",
-    path: "/law_site_depo/practice-areas",
+    path: "/practice-areas",
     LinkClassName: "nav-links",
     ListItemClassName: "nav-item",
     onClick: true,

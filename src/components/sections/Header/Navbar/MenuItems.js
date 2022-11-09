@@ -1,7 +1,7 @@
 export const MenuItems = [
   {
-    title: "References",
-    path: "/law_site_depo/references",
+    title: "Resources",
+    path: "/resources",
     className: "dropdown-link",
   },
 ];
