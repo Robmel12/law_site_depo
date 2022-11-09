@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import { ReferencesList } from "./ReferencesList";
+import { ReferencesList } from "./ResourcesList";
 import Links from "../sections/Header/Navbar/Links";
-import "./references.scss";
+import "./resources.scss";
 
-function References(props) {
+function Resources(props) {
   const { setUseDarkLogo, setUseWhiteLinks, setUseWhiteLogo } = props;
   useEffect(() => {
     setUseDarkLogo(true);
@@ -32,4 +32,4 @@ function References(props) {
   );
 }
 
-export default References;
+export default Resources;

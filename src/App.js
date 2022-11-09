@@ -8,7 +8,7 @@ import "./css/globals.scss";
 
 import ScrollToTop from "./components/pages/Pagefunctions/ScrollToTop";
 import useScrollPosition from "./components/pages/Pagefunctions/useScrollPosition";
-import References from "./components/pages/References";
+import Resources from "./components/pages/Resources";
 
 const OurAttorneys = lazy(() => import("./components/pages/OurAttorneys"));
 const PracticeAreas = lazy(() => import("./components/pages/PracticeAreas"));
@@ -81,10 +81,10 @@ function App() {
           />
 
           <Route
-            path="/references"
+            path="/resources"
             exact
             element={
-              <References
+              <Resources
                 setUseDarkLogo={setUseDarkLogo}
                 setUseWhiteLinks={setUseWhiteLinks}
                 setUseWhiteLogo={setUseWhiteLogo}
