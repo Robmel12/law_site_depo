@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/law_site_depo/static/css/main.359fc2ca.css",
-    "main.js": "/law_site_depo/static/js/main.db0027c2.js",
+    "main.js": "/law_site_depo/static/js/main.b490058b.js",
     "static/js/189.9199724c.chunk.js": "/law_site_depo/static/js/189.9199724c.chunk.js",
     "static/js/690.c3110b02.chunk.js": "/law_site_depo/static/js/690.c3110b02.chunk.js",
     "static/css/756.e35b49de.chunk.css": "/law_site_depo/static/css/756.e35b49de.chunk.css",
-    "static/js/756.3e6f0ee9.chunk.js": "/law_site_depo/static/js/756.3e6f0ee9.chunk.js",
-    "static/js/139.34340471.chunk.js": "/law_site_depo/static/js/139.34340471.chunk.js",
+    "static/js/756.fc5fa2f9.chunk.js": "/law_site_depo/static/js/756.fc5fa2f9.chunk.js",
+    "static/js/139.157c449f.chunk.js": "/law_site_depo/static/js/139.157c449f.chunk.js",
     "static/js/801.fb0ad128.chunk.js": "/law_site_depo/static/js/801.fb0ad128.chunk.js",
     "static/js/425.21c5ee02.chunk.js": "/law_site_depo/static/js/425.21c5ee02.chunk.js",
     "static/media/lawyers-walking.webp": "/law_site_depo/static/media/lawyers-walking.03c4ffd4e4d860833c00.webp",
@@ -27,17 +27,17 @@
     "static/media/logo-image-white.webp": "/law_site_depo/static/media/logo-image-white.afd5461bf83d7b8faf36.webp",
     "index.html": "/law_site_depo/index.html",
     "main.359fc2ca.css.map": "/law_site_depo/static/css/main.359fc2ca.css.map",
-    "main.db0027c2.js.map": "/law_site_depo/static/js/main.db0027c2.js.map",
+    "main.b490058b.js.map": "/law_site_depo/static/js/main.b490058b.js.map",
     "189.9199724c.chunk.js.map": "/law_site_depo/static/js/189.9199724c.chunk.js.map",
     "690.c3110b02.chunk.js.map": "/law_site_depo/static/js/690.c3110b02.chunk.js.map",
     "756.e35b49de.chunk.css.map": "/law_site_depo/static/css/756.e35b49de.chunk.css.map",
-    "756.3e6f0ee9.chunk.js.map": "/law_site_depo/static/js/756.3e6f0ee9.chunk.js.map",
-    "139.34340471.chunk.js.map": "/law_site_depo/static/js/139.34340471.chunk.js.map",
+    "756.fc5fa2f9.chunk.js.map": "/law_site_depo/static/js/756.fc5fa2f9.chunk.js.map",
+    "139.157c449f.chunk.js.map": "/law_site_depo/static/js/139.157c449f.chunk.js.map",
     "801.fb0ad128.chunk.js.map": "/law_site_depo/static/js/801.fb0ad128.chunk.js.map",
     "425.21c5ee02.chunk.js.map": "/law_site_depo/static/js/425.21c5ee02.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.359fc2ca.css",
-    "static/js/main.db0027c2.js"
+    "static/js/main.b490058b.js"
   ]
 }
