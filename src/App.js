@@ -1,5 +1,5 @@
 import React, { useState, lazy, Suspense } from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // import Home from './components/pages/Home';
 import { Home } from "./components/pages/Home";
@@ -32,7 +32,7 @@ function App() {
   );
 
   return (
-    <Router hashType="slash">
+    <Router basename={process.env.PUBLIC_URL}>
       <ScrollToTop />
       <Suspense fallback={<div>..loading</div>}>
         <Navbar
@@ -45,7 +45,8 @@ function App() {
 
         <Routes>
           <Route
-            path="/"
+
+            exact path="/"
             index
             element={
               <Home

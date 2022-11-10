@@ -2,7 +2,7 @@
   "homepage": "http://Robmel12.github.io/law_site_depo",
   "name": "law_site",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
     "@testing-library/jest-dom": "^5.16.5",
