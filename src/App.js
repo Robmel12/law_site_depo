@@ -1,5 +1,5 @@
 import React, { useState, lazy, Suspense } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 // import Home from './components/pages/Home';
 import { Home } from "./components/pages/Home";
