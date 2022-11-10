@@ -2,7 +2,7 @@ import React, { useState, lazy, Suspense } from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 // import Home from './components/pages/Home';
-import { Home } from "./components/pages/Home";
+import { Home } from "./components/pages/Home";git 
 
 import "./css/globals.scss";
 
@@ -32,7 +32,7 @@ function App() {
   );
 
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router >
       <ScrollToTop />
       <Suspense fallback={<div>..loading</div>}>
         <Navbar
