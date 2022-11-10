@@ -47,7 +47,7 @@ export default function Navbar(props) {
       // });
     } else {
       menuIconDisplay.current = true;
-      MainNavItems[3].path = "law_site_depo/references";
+      MainNavItems[3].path = "/resources";
       // MainNavItems.map((item) => {
       //   item.onClick = false;
       // });
