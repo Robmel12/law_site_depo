@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/law_site_depo/static/css/main.47ca88b4.css",
-    "main.js": "/law_site_depo/static/js/main.64f2926b.js",
+    "main.css": "/law_site_depo/static/css/main.62a5c17f.css",
+    "main.js": "/law_site_depo/static/js/main.639a95aa.js",
     "static/js/189.9199724c.chunk.js": "/law_site_depo/static/js/189.9199724c.chunk.js",
     "static/js/690.c3110b02.chunk.js": "/law_site_depo/static/js/690.c3110b02.chunk.js",
-    "static/css/756.e35b49de.chunk.css": "/law_site_depo/static/css/756.e35b49de.chunk.css",
-    "static/js/756.fc5fa2f9.chunk.js": "/law_site_depo/static/js/756.fc5fa2f9.chunk.js",
+    "static/css/756.a26c2b0f.chunk.css": "/law_site_depo/static/css/756.a26c2b0f.chunk.css",
+    "static/js/756.792721a7.chunk.js": "/law_site_depo/static/js/756.792721a7.chunk.js",
     "static/js/139.98d8ecef.chunk.js": "/law_site_depo/static/js/139.98d8ecef.chunk.js",
     "static/js/801.fb0ad128.chunk.js": "/law_site_depo/static/js/801.fb0ad128.chunk.js",
     "static/js/425.21c5ee02.chunk.js": "/law_site_depo/static/js/425.21c5ee02.chunk.js",
@@ -26,18 +26,18 @@
     "static/media/logo-image.webp": "/law_site_depo/static/media/logo-image.1951d7f4eda7077e1356.webp",
     "static/media/logo-image-white.webp": "/law_site_depo/static/media/logo-image-white.afd5461bf83d7b8faf36.webp",
     "index.html": "/law_site_depo/index.html",
-    "main.47ca88b4.css.map": "/law_site_depo/static/css/main.47ca88b4.css.map",
-    "main.64f2926b.js.map": "/law_site_depo/static/js/main.64f2926b.js.map",
+    "main.62a5c17f.css.map": "/law_site_depo/static/css/main.62a5c17f.css.map",
+    "main.639a95aa.js.map": "/law_site_depo/static/js/main.639a95aa.js.map",
     "189.9199724c.chunk.js.map": "/law_site_depo/static/js/189.9199724c.chunk.js.map",
     "690.c3110b02.chunk.js.map": "/law_site_depo/static/js/690.c3110b02.chunk.js.map",
-    "756.e35b49de.chunk.css.map": "/law_site_depo/static/css/756.e35b49de.chunk.css.map",
-    "756.fc5fa2f9.chunk.js.map": "/law_site_depo/static/js/756.fc5fa2f9.chunk.js.map",
+    "756.a26c2b0f.chunk.css.map": "/law_site_depo/static/css/756.a26c2b0f.chunk.css.map",
+    "756.792721a7.chunk.js.map": "/law_site_depo/static/js/756.792721a7.chunk.js.map",
     "139.98d8ecef.chunk.js.map": "/law_site_depo/static/js/139.98d8ecef.chunk.js.map",
     "801.fb0ad128.chunk.js.map": "/law_site_depo/static/js/801.fb0ad128.chunk.js.map",
     "425.21c5ee02.chunk.js.map": "/law_site_depo/static/js/425.21c5ee02.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.47ca88b4.css",
-    "static/js/main.64f2926b.js"
+    "static/css/main.62a5c17f.css",
+    "static/js/main.639a95aa.js"
   ]
 }
