@@ -2,7 +2,7 @@ import React, { useState, lazy, Suspense } from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 // import Home from './components/pages/Home';
-import { Home } from "./components/pages/Home";git 
+import { Home } from "./components/pages/Home";
 
 import "./css/globals.scss";
 
