@@ -2,6 +2,41 @@
 .container {
   flex: 2;
   margin-right: 30px;
+
+  &.noShow{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    .confirm{
+      color: black;
+      padding: 40px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+    .confirmButtonContainer{
+      align-self: center;
+      .resendButton{
+        background-color: rgba(var(--alt-accent));
+      }
+      button{
+        background-color: rgba(var(--accent-bright), 0.9);
+        font-size: 1.3rem;
+        color: inherit;
+        text-align: center;
+        width: 140px;
+        height: 30px;
+        border: none;
+        transition: 0.3s ease-in-out;
+        border-radius: 5px;
+        &:hover {
+          cursor: pointer;
+          align-self: center;
+          width: 145px;
+        }
+      }
+  
+    }
+      }
   @include mixin.desktop {
     display: flex;
   }

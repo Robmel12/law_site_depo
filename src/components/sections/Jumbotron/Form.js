@@ -2,22 +2,36 @@ import React, { useState } from "react";
 import { FaHeadset, FaTimes } from "react-icons/fa";
 export default function Form(props) {
   const [email, setEmail] = useState("");
+  const [validEmail, setValidEmail] = useState(true)
   const [message, setMessage] = useState("");
-  const styles = props.styles;
+  const [showForm, setShowForm] = useState(true)
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const EmailMessage = {
-      email: email,
-      message: message,
-    };
-    console.log(EmailMessage);
-  };
+  const Valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+  
+  const styles = props.styles;
+  const handleChange = (e)=>{
+    setEmail(e.target.value);
+    setValidEmail(Valid.test(email));
+  }
+  const handleClick = (e) =>{
+    e.preventDefault();
+    if(validEmail) {setShowForm(false)
+      const EmailMessage = {
+        email: email,
+        message: message,
+      };
+      console.log(EmailMessage);}
+  }
+
+  const handleNewMessageClick = (e)=>{
+    e.preventDefault();
+   setShowForm(true);
+  }
+
 
   return (
     <div
-      className={`${styles.container} email-form-container`}
-      onSubmit={handleSubmit}
+      className={`${styles.container} email-form-container ${!showForm && styles.noShow}` }
     >
       <h3>
         <FaHeadset
@@ -31,12 +45,13 @@ export default function Form(props) {
           onClick={props.onClick}
         />
       )}
-      <form className="email-form">
+      {!validEmail && <p style={{color: 'red'}}>Email is invalid</p>}
+      {showForm ? <form className="email-form" >
         <input
           className={styles.input}
           type="text"
           placeholder="Your E-mail here.."
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={handleChange}
         />
         <textarea
           className={styles.textarea}
@@ -45,10 +60,14 @@ export default function Form(props) {
           rows="9"
           onChange={(e) => setMessage(e.target.value)}
         ></textarea>
-        <button className={`${styles.button} form-btn`} type="submit">
+        <button onClick={handleClick} className={`${styles.button} form-btn`}>
           Message Us
         </button>
-      </form>
+      </form>: <><p className={styles.confirm}>We will send you and email shortly at {email}</p>
+      <div className={styles.confirmButtonContainer}>
+      <button className={styles.rewMessageButton}onClick={handleNewMessageClick}>New Message</button>
+      <button className={styles.resendButton}>Resend Email</button></div>
+      </>}
     </div>
   );
 }

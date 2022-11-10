@@ -8,8 +8,9 @@
   z-index: 0;
   background-color: black;
   justify-items: center;
+  align-items: center;
   color: white;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
   @include mixin.xSmall {
     height: 47%;
   }
@@ -26,7 +27,7 @@
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    width: 100%;
+    width: 90%;
 
     @include mixin.desktop {
       .hr {
@@ -62,7 +63,10 @@
     margin-top: 50px;
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    @include mixin.tablet{
+      flex-direction: row;
+    }
     justify-content: center;
     @include mixin.tablet {
       width: 70%;
@@ -79,7 +83,7 @@
     &-title {
       align-self: center;
       text-align: center;
-      width: 70%;
+      width: 100%;
       z-index: 1;
       font-size: 1.5rem;
       font-weight: 400;
@@ -87,17 +91,18 @@
       border-bottom: 1px solid rgb(var(--accent-bright));
     }
     &-text {
-      flex: 2;
+      // flex: 2;
       font-size: 1rem;
       margin-top: 10px;
       font-family: halant;
       &-container {
-        width: 100%;
+        align-self: center;
+        width: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin: 20px;
+        
       }
     }
     &-icon {
@@ -106,9 +111,8 @@
       justify-self: flex-end;
       justify-content: flex-end;
       z-index: 1;
-      height: 100%;
-      flex: 1;
-      margin-left: 20px;
+      height: 32px;
+      width: 32px;
     }
   }
 }

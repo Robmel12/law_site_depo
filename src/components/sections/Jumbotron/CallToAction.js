@@ -18,12 +18,12 @@ function Word(props) {
 function Button(props) {
   return (
     <div className={`${props.styles.buttonContainer} button__container`}>
-      <button
+      <a target="_blank" rel="noreferrer" href={"https://wa.me/"}><button 
         className={`${props.styles.button} call-to-action__container--button`}
       >
         {" "}
         {props.text}
-      </button>
+      </button></a>
     </div>
   );
 }

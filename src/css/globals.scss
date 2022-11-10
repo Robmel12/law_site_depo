@@ -5,7 +5,9 @@
 @import "../components/sections/Header/Navbar/Navbar.scss";
 @import "./../components/sections/Services/Services.scss";
 @import "./../components/sections/CustomerTestimonials/CustomerTestimonials.scss";
-
+a{
+  color: inherit;
+}
 * {
   box-sizing: border-box;
   margin: 0;
