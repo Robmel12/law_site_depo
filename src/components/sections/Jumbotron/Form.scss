@@ -5,13 +5,13 @@
   z-index: 0;
   position: relative;
   width: 70%;
-  @include mixin.tablet{
+  @include mixin.tablet {
     width: 40%;
   }
-  @include mixin.desktop{
+  @include mixin.desktop {
     width: 30%;
   }
-  
+
   h3 {
     @include mixin.desktop {
       font-size: 2rem;
