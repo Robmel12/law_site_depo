@@ -13,6 +13,7 @@ function LinkItem(props) {
           className={item.LinkClassName && item.LinkClassName}
           to={item.path && item.path}
           onClick={props.onClick}
+          target={item.target && item.target}
         >
           {item.title}
           {item.icon}
@@ -22,6 +23,7 @@ function LinkItem(props) {
           className={item.LinkClassName && item.LinkClassName}
           href={item.url && item.url}
           onClick={props.onClick}
+          target={item.target && item.target}
         >
           {item.title}
           {item.icon}

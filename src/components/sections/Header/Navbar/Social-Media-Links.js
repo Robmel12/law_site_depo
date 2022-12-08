@@ -8,6 +8,7 @@ export const SocialMediaLinks = [
     LinkClassName: "social-media-links",
     ListItemClassName: "social-media-item",
     url: "https://www.instagram.com/",
+    target: "_blank",
   },
   {
     title: false,
@@ -15,6 +16,7 @@ export const SocialMediaLinks = [
     LinkClassName: "social-media-links",
     ListItemClassName: "social-media-item",
     url: "https://www.facebook.com/",
+    target: "_blank",
   },
   {
     title: false,
@@ -22,5 +24,6 @@ export const SocialMediaLinks = [
     LinkClassName: "social-media-links",
     ListItemClassName: "social-media-item",
     url: "https://www.linkedin.com/",
+    target: "_blank",
   },
 ];

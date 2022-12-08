@@ -42,15 +42,9 @@ export default function Navbar(props) {
     ) {
       menuIconDisplay.current = false;
       MainNavItems[3].path = "#";
-      // MainNavItems.map((item) => {
-      //   item.onClick = true;
-      // });
     } else {
       menuIconDisplay.current = true;
       MainNavItems[3].path = "/resources";
-      // MainNavItems.map((item) => {
-      //   item.onClick = false;
-      // });
     }
   });
   return (
